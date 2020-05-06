@@ -1,0 +1,100 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-06T06:22:05.086Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4692515300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeDeletePlace()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify if Delete functionality is working",
+        "description": "",
+        "id": "validate-the-googleapi-s-using-maven-cucumber-framework;verify-if-delete-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10995200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "DeletePlace Payload is provided",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.deleteplace_Payload_is_provided()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243860000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Google API\u0027s \"DeletePlaceAPI\" with \"DELETE\" Method is executed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.google_API_s_with_Method_is_executed(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Verify that the execution is success",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.verify_that_the_execution_is_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14991300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Status is OK",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.status_is_OK()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlaceAPI"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the GoogleAPI\u0027s using Maven Cucumber framework",
+    "description": "",
+    "id": "validate-the-googleapi-s-using-maven-cucumber-framework",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/TestAddFeature.feature",
+    "tags": []
+  }
+]
