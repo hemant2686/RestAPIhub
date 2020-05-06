@@ -30,7 +30,7 @@ public class StepDefinitions extends UtilClass{
     public void when_google_api_payload_is_provided_with_something_something_something(String name, String language, String address) throws IOException 
     {
 	    	res= given().spec(requestSpecMethod()).body(TestDataBuild.addPlaceMethod(name, language, address));
-		
+		System.out.println("message for git");
 	}
 
 	@When("Google API's {string} with {string} Method is executed")
